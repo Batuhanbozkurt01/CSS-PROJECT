@@ -1,0 +1,61 @@
+/*
+CSS Nedir?
+CSS, Basamaklı Stil Sayfaları anlamına gelir.
+CSS, HTML öğelerinin ekranda, kağıtta veya diğer ortamlarda nasıl görüntüleneceğini açıklar.
+CSS çok fazla işten tasarruf sağlar. Birden fazla web sayfasının düzenini aynı anda kontrol edebilir.
+Harici stil sayfaları CSS dosyalarında saklanır.
+
+CSS SÖZDİZİMİ
+Örnek:
+h4 {color: yellow; font-size: 10px;
+h4 burada seçicidir yani selector. Biçimlendirmek istediğimiz HTML öğesini seçeriz.
+{} açıklama kısmıdır yani declaration.
+color ve font-size property iken yellow ve 10px value.
+Bildirim bloğu, noktalı virgülle ayrılmış bir veya daha fazla bildirim içerir.
+
+Her bildirim, iki nokta üst üste ile ayrılmış bir CSS özellik adı ve bir değer içerir.
+
+Birden fazla CSS bildirimi noktalı virgülle ayrılır ve bildirim blokları süslü parantezlerle çevrelenir.
+CSS Seçicileri
+CSS seçicileri, biçimlendirmek istediğiniz HTML öğelerini "bulmak" (veya seçmek) için kullanılır.
+
+CSS seçicilerini beş kategoriye ayırabiliriz:
+
+Basit seçiciler (isim, kimlik, sınıfa göre öğeleri seçin)
+Kombinatör seçiciler (öğeleri aralarındaki belirli bir ilişkiye göre seçer)
+Sahte sınıf seçiciler (belirli bir duruma göre öğeleri seçer)
+Sahte eleman seçicileri (bir elemanın bir kısmını seçer ve biçimlendirir)
+Öznitelik seçiciler (bir özniteliğe veya öznitelik değerine göre öğeleri seçin)
+CSS id Seçici
+Kimlik seçici, belirli bir öğeyi seçmek için bir HTML öğesinin kimlik niteliğini kullanır.
+
+Bir öğenin id'si sayfa içinde benzersizdir, bu yüzden id seçicisi tek bir benzersiz öğeyi seçmek için kullanılır!
+
+Belirli bir kimliğe sahip bir öğeyi seçmek için, bir diyez (#) karakteri yazın ve ardından öğenin kimliğini yazın.
+CSS sınıfı Seçici
+Sınıf seçici, belirli bir sınıf niteliğine sahip HTML öğelerini seçer.
+
+Belirli bir sınıfa sahip öğeleri seçmek için, bir nokta (.) karakteri yazın ve ardından sınıf adını yazın.
+CSS Evrensel Seçici
+Evrensel seçici (*) sayfadaki tüm HTML öğelerini seçer.
+CSS Gruplama Seçicisi
+Gruplama seçicisi aynı stil tanımlarına sahip tüm HTML öğelerini seçer.
+
+Aşağıdaki CSS koduna bakın (h1, h2 ve p öğelerinin stil tanımları aynıdır).
+Harici CSS
+Harici bir stil sayfasıyla, sadece bir dosyayı değiştirerek tüm web sitesinin görünümünü değiştirebilirsiniz!
+
+Her HTML sayfasının, başlık bölümündeki <link> öğesinin içinde harici stil sayfası dosyasına bir referans içermesi gerekir.
+Harici stil sayfası herhangi bir metin düzenleyicide yazılabilir ve .css uzantısıyla kaydedilmelidir.
+
+Harici .css dosyası herhangi bir HTML etiketi içermemelidir.
+Dahili CSS
+Tek bir HTML sayfasının kendine özgü bir stili varsa, dahili bir stil sayfası kullanılabilir.
+
+İç stil, <style> öğesinin içinde, başlık bölümünde tanımlanır.
+Satır içi CSS
+Satır içi stil, tek bir öğe için benzersiz bir stil uygulamak amacıyla kullanılabilir.
+
+Satır içi stilleri kullanmak için ilgili öğeye style niteliğini ekleyin. Style niteliği herhangi bir CSS özelliğini içerebilir.
+
+*/

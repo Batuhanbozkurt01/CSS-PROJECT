@@ -1,0 +1,14 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    border: 10px solid blue;
+}
+p{
+    background-color: tomato;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+    border: 10px solid blue;
+}

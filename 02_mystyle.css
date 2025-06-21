@@ -1,0 +1,43 @@
+body{
+    background-color: lightskyblue;
+    background-image: url(/css_resimleri/manzara.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+h1{
+    background-color: rgba(255, 0, 255, 0.4);
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 20px;
+}
+.kutu1{
+    background-color: rgba(0, 0, 255, 0.4);
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+.kutu2{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: navy;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+}
+/*
+background -> Tüm arka plan özelliklerini tek bir bildirimde ayarlar.
+background-attachment -> Arka plan görüntüsünün sabit mi yoksa sayfanın geri kalanıyla birlikte mi kaydırılacağını ayarlar.
+background-clip -> Arka planın boyama alanını belirtir.
+background-color -> Bir öğenin arka plan rengini ayarlar.
+background-image -> Bir öğenin arka plan resmini ayarlar.
+background-origin -> Arka plan görüntüsünün/görüntülerinin nerede konumlandırıldığını belirtir.
+background-position ->Arka plan görüntüsünün başlangıç ​​konumunu ayarlar.
+background-repeat ->Arka plan görüntüsünün nasıl tekrarlanacağını ayarlar.
+background-size -> Arka plan resminin/resimlerinin boyutunu belirtir.
