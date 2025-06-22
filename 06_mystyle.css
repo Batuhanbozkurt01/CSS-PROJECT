@@ -1,0 +1,25 @@
+/*
+width ve height özellikleri bir elemanın yüksekliğini ve genişliğini ayarlamak için kullanılır.
+Yükseklik ve genişlik özellikleri dolgu, kenarlıklar veya kenar boşluklarını içermez. Öğenin dolgusu, kenarlığı ve kenar boşluğu içindeki alanın yüksekliğini/genişliğini ayarlar.
+width ve height özellikleri aşağıda belirtilen değerleri alır:
+auto- Bu varsayılan değerdir. Tarayıcı yüksekliği ve genişliği hesaplar.
+length- Yüksekliği/genişliği px, cm, vb. olarak tanımlar.
+%- İçeren bloğun yüksekliğini/genişliğini yüzde olarak tanımlar.
+initial- Yüksekliği/genişliği varsayılan değerine ayarlar.
+inherit- Yükseklik/genişlik, üst değerinden devralınacaktır.
+NOTLAR:
+height -> Bir öğenin yüksekliğini ayarlar.
+max-height -> Bir öğenin maksimum yüksekliğini ayarlar.
+max-width -> Bir öğenin maksimum genişliğini ayarlar.
+min-height -> Bir öğenin minimum yüksekliğini ayarlar.
+min-width -> Bir öğenin minimum genişliğini ayarlar.
+width -> Bir öğenin genişliğini ayarlar.
+*/
+div{
+    height: 500px;
+    width: 75%;
+    text-align: center;
+    background-color: rgb(221, 239, 240);
+    color: navy;
+    font-size: 30px;
+}
