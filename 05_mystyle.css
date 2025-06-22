@@ -1,0 +1,15 @@
+/*
+CSS paddingözellikleri, tanımlanmış sınırların içinde bir öğenin içeriğinin etrafında boşluk oluşturmak için kullanılır.
+
+CSS ile dolgu üzerinde tam kontrole sahipsiniz. Bir öğenin her bir tarafı için (üst, sağ, alt ve sol) dolguyu ayarlamak için özellikler vardır.
+padding-top, padding-right, padding-bottom, padding-left
+Not: Negatif değerlere izin verilmez.
+CSS widthözelliği, öğenin içerik alanının genişliğini belirtir. İçerik alanı, bir öğenin dolgusu, kenarlığı ve kenar boşluğunun içindeki kısımdır ( kutu modeli ).
+
+Yani, bir öğenin belirtilen bir genişliği varsa, o öğeye eklenen dolgu, öğenin toplam genişliğine eklenecektir. Bu genellikle istenmeyen bir sonuçtur.
+*/
+div{
+    border: 10px solid red;
+    background-color: rgb(161, 148, 134);
+    padding: 25px 50px 75px 100px;
+}
