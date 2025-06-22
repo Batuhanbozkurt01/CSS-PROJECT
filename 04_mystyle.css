@@ -1,0 +1,13 @@
+/*
+CSS marginözellikleri, tanımlanmış sınırların dışında, öğelerin etrafında boşluk oluşturmak için kullanılır.
+CSS ile kenar boşlukları üzerinde tam kontrole sahipsiniz. Bir öğenin her bir tarafı için (üst, sağ, alt ve sol) kenar boşluğunu ayarlamak için özellikler vardır.
+margin-top, margin-right, margin-bottom, margin-left
+auto - tarayıcı marjı hesaplar
+length - px, pt, cm, vb. cinsinden bir kenar boşluğu belirtir.
+% - içeren öğenin genişliğinin %'si olarak bir kenar boşluğu belirtir
+inherit - kenar boşluğunun ana öğeden miras alınması gerektiğini belirtir
+Not: Negatif değerlere izin verilir.
+*/
+p{
+    margin: 25px 50px 75px 100px;
+}
