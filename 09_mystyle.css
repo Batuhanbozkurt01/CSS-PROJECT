@@ -1,0 +1,42 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+.div a{
+    color: navy;
+    background-color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px yellow;
+}
+.div h1{
+    background-color: lightblue;
+    text-align: center;
+}
+.div .p01{
+    background-color: rgb(180, 180, 255);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-indent: 50px;
+    word-spacing: 3px;
+}
+.div .p02{
+    background-color: rgb(1, 1, 182);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-indent: 50px;
+    word-spacing: 3px;
+}
+.div .p03{
+    background-color: rgb(0, 0, 71);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-color: lightblue;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-indent: 50px;
+    word-spacing: 3px;
+}
