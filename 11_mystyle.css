@@ -1,0 +1,95 @@
+.fa-brands.fa-apple {
+    font-size: 200px;
+    background: linear-gradient(to right, darkred 0%, red 50%, rgb(243, 174, 174) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.fa-apple:hover {
+    background: linear-gradient(to right, rgb(243, 174, 174) 0%, red 50%, darkred 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-google {
+    font-size: 200px;
+    background: linear-gradient(270deg, navy, blue, lightblue, navy);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateGradient 3s ease infinite;
+    display: inline-block;
+    margin: 100px;
+}
+@keyframes animateGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* PART-1 
+.fa-brands.fa-apple
+Bu, hem fa-brands hem de fa-apple sınıfına sahip olan HTML elemanını seçer. Yani örn: <i class="fa-brands fa-apple"></i>.
+
+font-size: 200px;
+İkonun büyüklüğünü 200 piksel yapar. Font Awesome ikonları aslında yazı fontu olduğu için font-size büyütür.
+
+background: linear-gradient(to right, darkred 0%, red 50%, rgb(243, 174, 174) 100%);
+İkonun rengini soldan sağa doğru bir renk geçişi ile ayarlar.
+
+darkred %0’da başlar,
+
+red %50’de,
+
+rgb(243, 174, 174) (açık pembe ton) %100’de biter.
+
+-webkit-background-clip: text;
+Arka planın (background) sadece metnin (ikonun) içinde görünmesini sağlar. Diğer yerler şeffaf olur.
+
+-webkit-text-fill-color: transparent;
+Metnin kendi rengini (fill color) şeffaf yapar ki arka plandaki gradient görünsün.
+
+display: inline-block;
+İkona hem metin gibi hem blok gibi davranma özelliği verir. Böylece margin, padding gibi stiller rahat uygulanabilir.
+
+PART - 2
+.fa-apple:hover
+İkonun üzerine mouse geldiğinde (hover durumunda) çalışır.
+
+background: linear-gradient(to right, rgb(243, 174, 174) 0%, red 50%, darkred 100%);
+Hover olduğunda gradientin renkleri tersine döner, yani açık pembe solda, koyu kırmızı sağda.
+
+-webkit-background-clip ve -webkit-text-fill-color yine arka planın metnin içinde görünmesi için aynı şekilde ayarlanır.
+
+PART-3
+.fa-google
+fa-google sınıfına sahip ikonu seçer. Örn: <i class="fa-brands fa-google"></i>.
+
+font-size: 200px;
+İkon boyutu 200 piksel.
+
+background: linear-gradient(270deg, navy, blue, lightblue, navy);
+Renk geçişi 270 derece açıyla yapılır (sağdan sola doğru), renkler sırasıyla: lacivert → mavi → açık mavi → tekrar lacivert.
+
+background-size: 600% 600%;
+Gradientin arka plan boyutunu 6 kat büyütür, böylece animasyon sırasında renkler hareket eder gibi görünür.
+
+-webkit-background-clip: text; & -webkit-text-fill-color: transparent;
+Arka plan sadece metin içinde görünür, metin rengi şeffaf.
+
+animation: animateGradient 3s ease infinite;
+animateGradient adlı animasyonu 3 saniyede, kolay başlayan ve biten (ease) şekilde sonsuz tekrarlar.
+
+display: inline-block;
+Blok özellikleri verir.
+
+margin: 100px;
+Etrafına 100 piksellik boşluk koyar.
+
+PART - 4
+Bu animasyon, arka planın pozisyonunu yatay eksende (%0’dan %100’e ve tekrar %0’a) değiştirir.
+
+Böylece renkler arka planda kayıyor gibi görünür ve ikonun üzerindeki gradient canlı ve hareketli olur.
+
+not: Burada olan bazı yapılara ileri dosyalarda daha fazla detaylı bahsedilecektir. Hepsi için açıklama verildi.
+*/
+
