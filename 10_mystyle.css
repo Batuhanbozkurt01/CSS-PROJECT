@@ -1,0 +1,23 @@
+/* font – Tüm yazı tipi (font) özelliklerini tek bir bildiride ayarlar.
+
+font-family – Metin için yazı tipi ailesini belirtir.
+
+font-size – Metnin yazı tipi boyutunu belirtir.
+
+font-style – Metin için yazı tipi stilini belirtir.
+
+font-variant – Metnin küçük büyük harf karışımı (small-caps) yazı tipinde görünüp görünmeyeceğini belirtir.
+
+font-weight – Bir yazı tipinin kalınlığını (ağırlığını) belirtir. */
+p{
+    font-size: 40px;
+    background-color: lightcyan;
+    color: darkblue;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* font-sizelerdeki 16px 1em eşittir. */
