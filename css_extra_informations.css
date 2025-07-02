@@ -1,0 +1,58 @@
+/* 
+display özelliği, düzeni kontrol etmek için en önemli CSS özelliğidir.
+display özelliği, bir öğenin bir web sayfasında nasıl gösterileceğini belirtmek için kullanılır.
+
+Her HTML öğesinin, öğenin türüne bağlı olarak varsayılan bir display değeri vardır. Çoğu öğe için varsayılan görüntüleme değeri blok veya satır içidir.
+
+display özelliği, HTML öğelerinin varsayılan display davranışını değiştirmek için kullanılır.
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+Bu elementler blok seviyesindeki elementlerdir.
+
+<span>
+<a>
+<img>
+Bu elementler ise inline seviyesindeki elementlerdir.
+
+display özelliği şu değerleri alır:
+- inline -> Bir öğeyi satır içi öğe olarak görüntüler
+- block -> Bir öğeyi blok öğe olarak görüntüler
+- contents -> Konteyneri ortadan kaldırır ve alt öğeleri DOM'da bir üst seviyedeki öğenin çocukları yapar
+- flex -> Bir öğeyi blok düzeyinde flex konteyner olarak görüntüler
+- grid -> Bir öğeyi blok düzeyinde grid konteyner olarak görüntüler
+- inline-block -> Bir öğeyi satır içi düzeyde blok konteyner olarak görüntüler. Öğenin kendisi satır içi bir öğe olarak biçimlendirilir, ancak yükseklik ve genişlik değerleri uygulayabilirsiniz.
+- inline-flex -> Öğeyi satır içi düzeyde esnek kapsayıcı olarak görüntüler
+- inline-grad -> Öğeyi satır içi düzeyde ızgara kapsayıcı olarak görüntüler
+- inline-table -> Öğe satır içi düzeyde bir tablo olarak görüntülenir
+- list-item -> Öğenin <li> öğesi gibi davranmasına izin verir
+- run-in -> Bağlama bağlı olarak öğeyi blok veya satır içi olarak görüntüler
+- table -> Öğenin <table> öğesi gibi davranmasına izin verir
+- table-caption -> Öğenin <caption> öğesi gibi davranmasına izin verir
+- table-column-group -> Öğenin <colgroup> öğesi gibi davranmasına izin verir
+- table-header-group -> header-group Öğenin <thead> öğesi gibi davranmasına izin verir
+- table-footer-group -> Öğenin <tfoot> öğesi gibi davranmasına izin verir
+- table-row-group -> Öğenin <tbody> öğesi gibi davranmasına izin verir
+- table-cell -> Öğenin <td> öğesi gibi davranmasına izin verir
+- table-column -> Öğenin <col> öğesi gibi davranmasına izin verir
+- table-row -> Öğenin <tr> öğesi gibi davranır
+- none -> Öğe tamamen kaldırıldı
+- initial -> Bu özelliği varsayılan değerine ayarlar
+- inherit -> Bu özelliği üst öğesinden miras alır
+
+not: display: none; genellikle öğeleri silmeden ve yeniden oluşturmadan gizlemek ve göstermek için JavaScript ile kullanılır.
+<script> öğesi varsayılan olarak display: none; kullanır.
+
+Not: Bir öğenin display özelliğini ayarlamak yalnızca öğenin nasıl görüntülendiğini değiştirir, ne tür bir öğe olduğunu DEĞİL. Bu nedenle, display: block; içeren bir satır içi öğenin içinde başka blok öğelerinin bulunmasına izin verilmez.
+
+Not: Bir öğeyi gizlemek, display özelliğini none olarak ayarlayarak yapılabilir. Öğe gizlenecek ve sayfa, öğe orada yokmuş gibi görüntülenecektir.
+
+Not: visibility:hidden; ayrıca bir öğeyi gizler.
+
+Ancak, öğe yine de daha öncekiyle aynı alanı kaplayacaktır. Öğe gizlenecek, ancak yine de düzeni etkileyecektir.
+*/
