@@ -1,0 +1,26 @@
+ol{
+    background-color: lightblue;
+    padding: 25px;
+    width: 300px;
+    height: 150px;
+}
+ul{
+    background-color: greenyellow;
+    padding: 25px;
+    width: 300px;
+    height: 150px;
+}
+ol li{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 40px;
+}
+ul li{
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 40px;
+}
