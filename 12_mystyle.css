@@ -1,0 +1,34 @@
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 400%;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    
+}
+a:link{
+    background-color: red;
+    color: white;
+    
+}
+a:visited{
+    background-color: green;
+    color: white;
+}
+a:hover{
+    background-color: pink;
+    color: white;
+    font-size: 600%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+a:active{
+    background-color: yellow;
+    color: white;
+}
+/* 
+Birden fazla bağlantı durumu için stil belirlerken bazı sıra kuralları vardır:
+a:hover, a:link ve a:visited'dan sonra GELMELİDİR.
+a:active mutlaka a:hover'dan sonra gelmelidir.
+
+*/
