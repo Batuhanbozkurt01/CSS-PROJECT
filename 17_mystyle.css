@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: navy;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+p{
+    overflow-x: hidden; 
+    overflow-y: scroll;  
+    background-color: rgb(253, 149, 149);
+    color: navy;
+    width: 700px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+a{
+    text-decoration: none;
+    border: 4px solid beige;
+    background-color: beige;
+    border-radius: 20px;
+    color: navy;
+}
+
+/* 
+overflow, bir HTML öğesinin içeriği, verilen genişlik (width) veya yükseklik (height) değerini aşarsa, bu taşan içeriğin ne olacağını belirleyen CSS özelliğidir.
+
+| Değer     | Açıklama                                                |
+| --------- | ------------------------------------------------------- |
+| `visible` | (Varsayılan) Taşan içerik **görünür**, kesilmez.        |
+| `hidden`  | Taşan içerik **gizlenir**, kullanıcı göremez.           |
+| `scroll`  | İçerik taşsa da taşmasa da **kaydırma çubuğu görünür.** |
+| `auto`    | İçerik taşarsa **gerekirse scroll bar** çıkar.          |
+
+overflow-x: Yalnızca yatay ekseni kontrol eder.
+overflow-y: Yalnızca dikey ekseni kontrol eder.
+
+Uzun metin kutularında veya dar kutularda taşmayı engeller.
+Scroll bar yardımıyla içeriği kaydırılabilir yapar.
+Mobil uyumlu ve düzenli tasarımlar için önemlidir.
+*/
