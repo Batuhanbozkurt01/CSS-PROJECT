@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    border: 4px double green;
+    margin: 15px;
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.static-box{
+    position: static;
+    background-color: deepskyblue;
+}
+
+.relative-box{
+    position: relative;
+    background-color: lightcoral;
+    top: 20px;
+    left: 40px;
+}
+
+.absolute-box{
+    position: absolute;
+    background-color: yellow;
+    top: 20px;
+    right: 20px;
+}
+
+.fixed-box{
+    position: fixed;
+    background-color: lightgreen;
+    bottom: 15px;
+    right: 15px;
+}
+
+.sticky-box{
+    position: sticky;
+    background-color: lavender;
+    top: 0;
+}
+
+.spacer{
+    height: 1500px;
+}
+
+/* 
+CSS POSITION ÖZELLİĞİ DEĞERLERİ
+
+1. static (Varsayılan)
+Özellik: HTML’deki sıraya göre yerleşir. top, left gibi konumlandırma değerleri işlemez.
+
+Ne zaman kullanılır: Genellikle hiç position tanımlanmadığında bu geçerlidir.
+
+2. relative (Göreceli)
+Özellik: Öğeyi, bulunduğu konuma göre kaydırır. Yani orijinal yeri hâlâ sayfa akışındadır.
+
+Kullanımı: top, left, right, bottom gibi özelliklerle kaydırma yapılır.
+
+3. absolute (Mutlak)
+Özellik: Öğeyi, en yakın position: relative veya absolute olan ata öğeye göre konumlandırır. Yoksa body’ye göre olur.
+
+Kullanımı: Öğeyi normal akıştan çıkarır. Yani diğer elemanlar onun yerini alır.
+
+4. fixed (Sabit)
+Özellik: Öğeyi tarayıcı penceresine sabitler. Scroll yapsan bile yerinde kalır.
+
+Kullanımı: Genellikle sabit menüler veya bildirim kutuları için kullanılır.
+
+5. sticky (Yapışkan)
+Özellik: Normalde scroll ile gider ama belli bir noktaya gelince yapışır (scrolling ile aktif olur).
+
+Kullanımı: Menü veya başlıkların kayarken sabitlenmesi için kullanılır.
+
+Not-1: static ve relative akışa dahil, absolute ve fixed akışa dahil değil, sticky karmadır.
+
+Akış (Flow) Nedir?
+Tarayıcı bir HTML sayfasını yukarıdan aşağıya, soldan sağa doğru okur ve içerikleri sırayla yerleştirir.
+Bu sıraya göre öğeler birbiri altında veya yanında dizilir — işte bu düzene akış (document flow) denir.
+
+Akışa Dahil Olmak Ne Demek?
+Bir öğe akışa dahilse, onun kapladığı alan diğer öğeleri etkiler. Yani:
+
+Altındaki öğe onun altına yerleşir.
+
+Yanındaki öğe onun sağına veya sonrasına gelir.
+
+Sayfa düzeni onun varlığına göre şekillenir.
+
+Not-2: static hariç diğer tüm öğeler right, left, bottom, top değerlerini alabilirler.
+
+*/
