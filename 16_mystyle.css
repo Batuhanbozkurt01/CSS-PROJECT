@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container{
+    position: relative;
+}
+
+.red_box{
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(288, 133, 133);
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.blue_box{
+    position: absolute;
+    z-index: 2;
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(150, 150, 241);
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.green_box{
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    left: 150px;
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(123, 245, 123);
+    color: white;
+}
+
+/* 
+Z-index, CSS’te bir öğenin diğer öğelere göre önce mi yoksa arkada mı görüneceğini belirleyen bir özelliktir.
+Yani öğeleri ekranın derinlik (z) eksenine göre sıralar.
+
+z-index değeri ne kadar yüksekse, o öğe o kadar önde görünür.
+Aynı konumda olan öğelerden z-index değeri büyük olan üstte, küçük olan altta kalır.
+
+z-index sadece şu position türleriyle çalışır:
+-relative
+-absolute
+-fixed
+-sticky
+
+Not: position verilmemiş öğelerde z-index çalışmaz.
+Not: z-index negatif de olabilir (z-index: -1) → bu, öğeyi en arkaya atar.
+*/
