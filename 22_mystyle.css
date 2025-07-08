@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-input[type=text], select {
+input[type=text], select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -43,11 +43,20 @@ div{
     padding: 20px;
     background-color: lightgreen;
 }
-
-select{
-    width: 100%;
-    background-color: lightpink;
+#searchh{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ff0000;
     border-radius: 4px;
-    padding: 10px 15px;
-    border: none;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    color: black;
+}
+
+#searchh:hover {
+    width: 100%;
 }
