@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: ghostwhite;
+}
+
+.header{
+    padding: 30px;
+    text-align: center;
+    background: goldenrod;
+}
+
+.header h1{
+    font-size: 50px;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: lawngreen;
+}
+
+.topnav a{
+    background-color: cornflowerblue;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 16px;
+    display: block;
+}
+
+.topnav a:hover{
+    background-color: deeppink;
+    color: white;
+}
+
+.leftcolumn{
+    float: left;
+    width: 75%;
+    background-color: yellow;
+}
+
+.rightcolumn{
+    background-color: chocolate;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    float: left;
+    width: 25%;
+}
+
+.fakeimage{
+    background-color: rebeccapurple;
+    width: 100%;
+    padding: 20px;
+}
+
+.card{
+    background-color: seagreen;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 10px;
+    background-color: rosybrown;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* * { box-sizing: border-box; } → Padding ve border dahil tüm genişlik hesaplaması yapılır.
+
+body { margin: 0; padding: 0; } → Sayfa kenar boşluklarını sıfırlar.
+
+font-family: Arial, sans-serif; → Yazı tipini ayarlar.
+
+background-color: color; → Arka plan rengini belirler.
+
+padding: 20px; → İç boşluk ekler.
+
+margin: 20px; → Dış boşluk ekler.
+
+width: 75%; → Elemanın genişliğini yüzdeye göre belirler.
+
+float: left; → Elemanı sola yaslar.
+
+overflow: hidden; → Taşan içeriği gizler.
+
+text-align: center; → Metni ortalar.
+
+display: block; → Elemanı blok düzende gösterir (varsayılan olarak satır kaplar).
+
+display: table; → Elemanı tablo gibi gösterir (clearfix için).
+
+clear: both; → Float'ların etkisini temizler.
+
+@media screen and (max-width: 800px) → 800px altı ekranlar için özel stil ayarı yapar (mobil uyum).
+
+:hover → Fareyle üzerine gelindiğinde uygulanacak stil.
+
+.class → Belirli bir sınıfa sahip öğeye stil uygular.
+
+#id → Belirli bir ID’ye sahip öğeye stil uygular. */
