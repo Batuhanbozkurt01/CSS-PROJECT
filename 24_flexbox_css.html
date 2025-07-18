@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            /* align-items: stretch; */
+            /* align-content: stretch; */
+            background-color: navy;
+        }
+
+        .flex-container > div {
+            background-color: beige;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+            line-height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <div class="flex-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+    </div>
+</body>
+</html>
+
+<!--
+✅ Flexbox Nedir?
+Flexbox (Flexible Box Layout) bir CSS düzenleme modelidir.
+Amaç: Elemanları esnek bir şekilde hizalamak, boşlukları düzenlemek, responsive tasarım yapmak.
+Avantajı: Dikey ve yatay hizalamada mükemmel kolaylık sağlar.
+Bir konteynır (ebeveyn) elemente display: flex; vererek başlıyoruz.
+
+✅ 1. Flex Container Özellikleri (Ebeveyn için)
+🔹 display: flex;
+Flexbox'u aktif eder.
+
+Konteynır içindeki tüm çocuk elemanlar "flex item" olur.
+
+🔹 flex-direction
+Ne işe yarar?
+Flex elemanlarının ana eksende (main axis) hangi yönde dizileceğini belirler.
+
+Değerler:
+
+row → Varsayılan. Soldan sağa yatay.
+
+row-reverse → Sağdan sola yatay.
+
+column → Yukarıdan aşağı dikey.
+
+column-reverse → Aşağıdan yukarı dikey.
+
+🔹 flex-wrap
+Ne işe yarar?
+Flex elemanlarının tek satırda mı kalacağı yoksa alt satıra geçip sarmalanacağı belirlenir.
+
+Değerler:
+
+nowrap → Varsayılan. Tüm elemanlar tek satırda sıkışır.
+
+wrap → Elemanlar taşarsa alt satıra geçer.
+
+wrap-reverse → Alt satıra geçer ama ters yönde (alt satır yukarıda görünür).
+
+🔹 flex-flow
+Kısa yol (shorthand): flex-direction + flex-wrap
+
+flex-flow: row wrap; Yatay diz + wrap ile alt satıra geç 
+🔹 justify-content
+Ne işe yarar?
+Ana eksen (main axis) üzerinde elemanların hizalanmasını belirler.
+
+Değerler:
+
+flex-start → Başta hizala.
+
+flex-end → Sonda hizala.
+
+center → Ortada hizala.
+
+space-between → Aralarda eşit boşluk, uçlar yapışık.
+
+space-around → Aralarda eşit boşluk + kenarlarda yarım boşluk.
+
+space-evenly → Her yerde eşit boşluk.
+
+🔹 align-items
+Ne işe yarar?
+Çapraz eksende (cross axis) elemanların hizalanmasını belirler.
+
+Değerler:
+
+stretch → Varsayılan. Yükseklik boyunca uzatır.
+
+flex-start → Yukarı hizalar.
+
+flex-end → Aşağı hizalar.
+
+center → Ortalar.
+
+baseline → Yazı çizgisine göre hizalar.
+
+🔹 align-content
+Ne işe yarar?
+Birden fazla satır varsa, satırların çapraz eksende hizalanmasını belirler. (Tek satırda çalışmaz!)
+
+Değerler:
+
+flex-start → Yukarıda.
+
+flex-end → Aşağıda.
+
+center → Ortada.
+
+space-between → Satırlar arası eşit boşluk.
+
+space-around → Satırlar arası eşit + kenarlar yarım boşluk.
+
+stretch → Satırları uzatır.
+
+✅ 2. Flex Item Özellikleri (Çocuk için)
+🔹 order
+Ne işe yarar?
+Elemanın sırasını belirler (varsayılan: 0).
+
+Daha küçük değer → Önce gelir.
+.item1 { order: 2; }
+.item2 { order: 1; } /* Bu önce gelir */
+🔹 flex-grow
+Ne işe yarar?
+Boş alanı oranına göre büyütür.
+
+Varsayılan: 0 (Büyümez).
+.item1 { flex-grow: 1; } /* 1 birim boşluk alır */
+.item2 { flex-grow: 2; } /* 2 birim boşluk alır */
+🔹 flex-shrink
+Ne işe yarar?
+Sığmazsa oranına göre küçülür.
+
+Varsayılan: 1 (Küçülür).
+
+0 yaparsan küçülmez.
+
+🔹 flex-basis
+Ne işe yarar?
+Elemanın başlangıç boyutu (px, %, auto).
+
+auto → İçeriğe göre.
+.item { flex-basis: 200px; }
+🔹 flex
+Kısa yol (shorthand):
+flex: flex-grow flex-shrink flex-basis;
+.item { flex: 1 1 100px; }
+🔹 align-self
+Ne işe yarar?
+Tek bir elemanın hizasını align-items’dan farklı yapar. 
+Değerler: auto | flex-start | flex-end | center | stretch | baseline-->
