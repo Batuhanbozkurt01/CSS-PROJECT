@@ -1,0 +1,65 @@
+.main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 10px;
+    gap: 10px 10px;
+}
+
+.main > div {
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.item01{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item05{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+/* display: grid; 
+
+ Bu div’i bir grid konteyneri yapar. İçindeki öğeler artık grid hücrelerine yerleşir.
+
+grid-template-columns: auto auto auto;
+
+Grid sisteminde 3 sütun oluşturur. Her sütun genişliği içeriğe göre belirlenir.
+
+gap: 10px 10px;
+
+Grid hücreleri arasındaki hem yatay hem dikey boşluğu 10px yapar.
+
+background-color: lightcoral; → kutuların arka plan rengi  
+color: white; → yazı rengi  
+text-align: center; → yazıyı ortalar  
+padding: 50px; → iç boşluk  
+font-size: 30px; → yazı boyutu  
+border: 1px solid red; → kırmızı kenarlık  
+border-radius: 10px; → köşeleri yuvarlar  
+
+grid-column-start: 1;  
+grid-column-end: 4;
+Bu kutu 1. sütundan başlar, 4. sütuna kadar 3 sütun kaplar (1-2-3).
+Yani ilk satırda tam yatay uzunlukta büyük bir kutu olur.
+
+grid-row-start: 5;  
+grid-row-end: 6;
+.item05 için Grid Özellikleri
+grid-row-start: 2;
+→ Öğeyi 2. satırda başlatır.
+
+grid-row-end: 3;
+→ Öğeyi 3. satırdan önce bitirir.
+Yani öğe sadece 2. satırı kaplar.
+
+➡️ Bu durumda .item05 öğesi, grid'in ikinci satırında, varsayılan sütun sırasına göre (örneğin 5. sıradaysa, 2. satırın 2. sütununda) görünür. */
